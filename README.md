@@ -1,0 +1,2 @@
+# agregator
+A news aggregator
