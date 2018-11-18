@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggregator</title>
+</head>
+<body>
+<h1>Aggregator</h1>
+<form action="/search" method="post">
+    Search:<input type="text" name="search">
+    <input type="submit" value="Search">
+    <table>
+    {{range $y, $x := . }}
+        <tr>
+            <td>{{ $x.Title }}</td>
+            <td>{{ $x.Description }} <a href={{ $x.Link }}>Link</a></td>
+        </tr>
+    {{end}}
+    </table>
+</form>
+</body>
+</html>

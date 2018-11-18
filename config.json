@@ -1,0 +1,16 @@
+{
+  "rss": [
+    {
+      "url": "https://lenta.ru/rss/news",
+      "timeout": 60,
+
+      "itemTags": ["guid", "description", "published", "category"]
+    },
+    {
+      "url": "https://abcnews.go.com/abcnews/topstories",
+      "timeout": 60,
+
+      "itemTags": ["category"]
+    }
+  ]
+}
